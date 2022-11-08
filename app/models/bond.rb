@@ -28,4 +28,7 @@ class Bond < ApplicationRecord
   validates :state, inclusion: { in: STATES }
 
   validates :state, presence: true
+
+  belongs_to :user
+  belongs_to :friend, class_name: 'User'
 end
