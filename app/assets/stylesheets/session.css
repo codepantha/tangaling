@@ -4,7 +4,7 @@
 
 .body-session
 h1.title {
-  @apply font-hairline text-center text-4xl;
+  @apply text-center text-4xl;
 }
 
 .body-session
@@ -29,7 +29,7 @@ a:hover {
 
 .body-session
 .form-group {
-  @apply border-main border-t-8 bg-white rounded-lg shadow-lg;
+  @apply border-main-default border-t-8 bg-white rounded-lg shadow-lg;
   @apply p-8 mb-6;
 }
 
@@ -61,9 +61,9 @@ a:hover {
 
 .body-session
 .cta-btn {
-  @apply select-none bg-main text-white font-bold;
+  @apply select-none bg-main-default text-white font-bold;
   @apply rounded shadow;
-  @apply py-2 px-4;
+  @apply py-2 px-4 mt-4;
 }
 .body-session
 .cta-btn:hover {
