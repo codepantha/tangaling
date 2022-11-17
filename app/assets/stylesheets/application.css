@@ -4,10 +4,12 @@
 /* @import 'common';
 @import 'session'; */
 
+/* TODO: import common.css */
 .alert {
   @apply text-white text-sm text-center font-medium px-4 py-3;
 }
 
+/* TODO: import session.css */
 .body-session {
   @apply bg-gray-100 font-sans h-screen w-screen;
 }
@@ -75,7 +77,20 @@ a:hover {
   @apply rounded shadow;
   @apply py-2 px-4 mt-4;
 }
+
 .body-session
 .cta-btn:hover {
   @apply bg-main-500;
+}
+
+.body-session
+.error-box {
+  @apply bg-red-100 border-t-4 border-red-500 rounded-b 
+  text-red-900 px-4 py-3 mb-3 shadow-md;
+}
+
+.body-session
+.error-box ul {
+  @apply pl-4;
+  list-style: disc;
 }
