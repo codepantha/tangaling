@@ -4,6 +4,10 @@
 /* @import 'common';
 @import 'session'; */
 
+/*
+ *= require evil-icons
+ */
+
 /* TODO: import common.css */
 .alert {
   @apply text-white text-sm text-center font-medium px-4 py-3;

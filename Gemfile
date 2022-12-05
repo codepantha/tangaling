@@ -50,6 +50,8 @@ gem "bootsnap", require: false
 
 gem "rexml"
 
+gem "evil_icons", "~> 1.10"
+
 # Use Sass to process CSS
 # gem "sassc-rails"
 
