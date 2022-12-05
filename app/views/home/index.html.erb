@@ -1,2 +1,42 @@
-<h1>Home page</h1>
-<p>Find me in app/views/home/index.html.erb</p>
+<div class="home">
+  <div class="bg-indigo-700 h-1"></div>
+  <div class="container mx-auto">
+    <header>
+      <div class="flex items-center flex-shrink-0">
+        <h1 class="title">tangaling</h1>
+      </div>
+      <div class="actions">
+        <div class="relative">
+          <% if current_user %>
+            <%= render "action_button",
+              caption: "Sign out",
+              icon: "ei-chevron-right",
+              link: destroy_user_session_path,
+              method: :delete %>
+          <% else %>
+            <%= render "action_button",
+              caption: "Sign in",
+              icon: "ei-chevron-right",
+              link: new_user_session_path %>
+          <% end %>
+        </div>
+      </div>
+    </header>
+  </div>
+
+  <div class="relative">
+    <div class="theatre container">
+      <div class="center">
+        <h2 class="heading">
+          It's the connections that matter
+        </h2>
+        <p class="text-gray-700 text-xl md:pb-4">
+          <% unless current_user %>
+            <%= link_to "Let's join", new_user_registration_path %>
+          <% end %>
+          discover the world around you
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
