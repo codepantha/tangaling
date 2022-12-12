@@ -52,6 +52,8 @@ gem "rexml"
 
 gem "evil_icons", "~> 1.10"
 
+gem "premailer-rails", "~> 1.11"
+
 # Use Sass to process CSS
 # gem "sassc-rails"
 
