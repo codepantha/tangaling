@@ -1,15 +1,6 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Tangaling</title>
-    <meta name="viewport" content="width=device-width,initial-scale=1">
-    <%= csrf_meta_tags %>
-    <%= csp_meta_tag %>
-
-    <%= stylesheet_link_tag "app_build", "data-turbo-track": "reload" %>
-    <%= javascript_importmap_tags "app_build" %>
-    <%= evil_icons_sprite %>
-  </head>
+  <%= render "layouts/header" %>
 
   <body>
     <%= render "layouts/alert" %>
