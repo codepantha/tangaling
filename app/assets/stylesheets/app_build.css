@@ -593,12 +593,12 @@ video {
   margin-bottom: 0px;
 }
 
-.inline-block {
-  display: inline-block;
+.block {
+  display: block;
 }
 
-.inline {
-  display: inline;
+.inline-block {
+  display: inline-block;
 }
 
 .flex {
@@ -617,20 +617,28 @@ video {
   height: 1.5rem;
 }
 
-.w-84 {
-  width: 21rem;
-}
-
 .w-full {
   width: 100%;
+}
+
+.w-84 {
+  width: 21rem;
 }
 
 .w-6 {
   width: 1.5rem;
 }
 
+.w-auto {
+  width: auto;
+}
+
 .flex-shrink-0 {
   flex-shrink: 0;
+}
+
+.flex-grow {
+  flex-grow: 1;
 }
 
 .flex-wrap {
@@ -657,6 +665,10 @@ video {
   gap: 1rem;
 }
 
+.border {
+  border-width: 1px;
+}
+
 .bg-indigo-700 {
   --tw-bg-opacity: 1;
   background-color: rgb(67 56 202 / var(--tw-bg-opacity));
@@ -674,6 +686,10 @@ video {
 
 .fill-current {
   fill: currentColor;
+}
+
+.p-6 {
+  padding: 1.5rem;
 }
 
 .px-3 {
@@ -1012,7 +1028,110 @@ a:hover {
     padding-top: 8rem;
     padding-bottom: 8rem;
   }
+}
 
+/******* MEMBER LAYOUT NAVBAR STYLING *******/
+
+/* TODO: extract to and import from member/nav.css */
+
+.body-member
+nav.topnav {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
+  --tw-bg-opacity: 1;
+  background-color: rgb(42 43 45 / var(--tw-bg-opacity));
+}
+
+.body-member
+nav.topnav h1 {
+  font-size: 1.5rem;
+  line-height: 2rem;
+  font-weight: 600;
+  --tw-text-opacity: 1;
+  color: rgb(138 138 138 / var(--tw-text-opacity));
+  margin-right: 1.5rem;
+}
+
+.body-member
+a.linked-icon {
+  margin-top: 0px;
+  margin-right: 0.75rem;
+  display: inline-block;
+  --tw-text-opacity: 1;
+  color: rgb(108 193 255 / var(--tw-text-opacity));
+}
+
+.body-member
+a.linked-icon:hover, a.linked-icon.active {
+  --tw-text-opacity: 1;
+  color: rgb(153 246 228 / var(--tw-text-opacity));
+}
+
+.body-member
+a.linked-icon.active .icon {
+  --tw-border-opacity: 1 !important;
+  border-color: rgb(153 246 228 / var(--tw-border-opacity)) !important;
+  border-bottom: 1px solid;
+}
+
+.body-member
+a.linked-icon .icon,
+.body-member
+nav.topnav h1 {
+  --tw-border-opacity: 1 !important;
+  border-color: rgb(42 43 45 / var(--tw-border-opacity)) !important;
+  border-bottom: 1px solid;
+}
+
+.body-member
+a.linked-icon .icon {
+  width: 40px;
+  height: 40px;
+}
+
+.body-member
+a.linked-icon.sign_out {
+  margin-right: 0px;
+}
+
+/********** MEMBER LAYOUT STYLING **********/
+
+.body-member {
+  --tw-bg-opacity: 1;
+  background-color: rgb(243 244 246 / var(--tw-bg-opacity));
+  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+.body-member
+.container {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.body-member.dark {
+  --tw-bg-opacity: 1;
+  background-color: rgb(24 25 26 / var(--tw-bg-opacity));
+  --tw-text-opacity: 1;
+  color: rgb(243 244 246 / var(--tw-text-opacity));
+}
+
+@media (min-width: 640px) {
+  .sm\:w-full {
+    width: 100%;
+  }
+
+  .sm\:max-w-full {
+    max-width: 100%;
+  }
+}
+
+@media (min-width: 768px) {
   .md\:mb-4 {
     margin-bottom: 1rem;
   }
@@ -1029,6 +1148,14 @@ a:hover {
     display: none;
   }
 
+  .md\:w-192 {
+    width: 48rem;
+  }
+
+  .md\:w-168 {
+    width: 42rem;
+  }
+
   .md\:w-96 {
     width: 24rem;
   }
@@ -1039,5 +1166,13 @@ a:hover {
 
   .md\:pb-4 {
     padding-bottom: 1rem;
+  }
+
+  .md\:pr-0 {
+    padding-right: 0px;
+  }
+
+  .md\:pl-0 {
+    padding-left: 0px;
   }
 }
