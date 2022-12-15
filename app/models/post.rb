@@ -24,4 +24,7 @@ class Post < ApplicationRecord
   belongs_to :user
   belongs_to :thread, class_name: 'Post', optional: true
   has_many :pictures
+  has_many :replies, class_name: 'Post', foreign_key: :thread_id
+
+  scope :not_reply, -> { where(thread_id: nil) }
 end
