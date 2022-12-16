@@ -167,6 +167,12 @@ nav.topnav h1 {
 }
 
 .body-member
+svg {
+  @apply h-full w-full;
+  fill: #fff;
+}
+
+.body-member
 a.linked-icon {
   @apply inline-block mt-0 mr-3 text-main-200;
 }
@@ -214,4 +220,75 @@ a.linked-icon.sign_out {
 .body-member.dark {
   @apply bg-dark-800;
   @apply text-gray-100;
+}
+
+/********** TIMELINE STYLING ***********/
+.body-member
+.timeline .line-group {
+  @apply mb-2;
+  @apply rounded overflow-hidden;
+}
+
+.body-member
+.timeline .line {
+  @apply p-3;
+  @apply bg-dark-700;
+}
+
+.body-member
+.timeline .line .profile-container {
+  @apply w-14;
+}
+
+.body-member
+.timeline .line .profile-container img {
+  @apply float-right;
+  @apply rounded-full;
+  height: 44px;
+  width: 44px;
+}
+
+.body-member
+.timeline .line .content {
+  @apply w-full;
+  @apply pr-3 pl-3;
+}
+
+.body-member
+.timeline .line .identifier {
+  @apply flex items-center w-full;
+}
+
+.body-member
+.timeline .line .identifier a {
+  @apply text-gray-100;
+}
+
+.body-member
+.timeline .line .identifier a:hover .name {
+  @apply underline;
+}
+
+.body-member
+.timeline .line .username {
+  @apply text-xs;
+  @apply ml-2;
+  @apply text-gray-500;
+  @apply no-underline;
+}
+
+.body-member
+.timeline .line .name {
+  @apply font-bold;
+  @apply text-sm;
+}
+
+.body-member
+.timeline .line .name:hover {
+  @apply underline;
+}
+
+.body-member
+.icon.icon--ei-location {
+  @apply w-7 h-7;
 }

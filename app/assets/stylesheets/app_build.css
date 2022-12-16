@@ -1059,6 +1059,13 @@ nav.topnav h1 {
 }
 
 .body-member
+svg {
+  height: 100%;
+  width: 100%;
+  fill: #fff;
+}
+
+.body-member
 a.linked-icon {
   margin-top: 0px;
   margin-right: 0.75rem;
@@ -1119,6 +1126,88 @@ a.linked-icon.sign_out {
   background-color: rgb(24 25 26 / var(--tw-bg-opacity));
   --tw-text-opacity: 1;
   color: rgb(243 244 246 / var(--tw-text-opacity));
+}
+
+/********** TIMELINE STYLING ***********/
+
+.body-member
+.timeline .line-group {
+  margin-bottom: 0.5rem;
+  overflow: hidden;
+  border-radius: 0.25rem;
+}
+
+.body-member
+.timeline .line {
+  padding: 0.75rem;
+  --tw-bg-opacity: 1;
+  background-color: rgb(42 43 45 / var(--tw-bg-opacity));
+}
+
+.body-member
+.timeline .line .profile-container {
+  width: 3.5rem;
+}
+
+.body-member
+.timeline .line .profile-container img {
+  float: right;
+  border-radius: 9999px;
+  height: 44px;
+  width: 44px;
+}
+
+.body-member
+.timeline .line .content {
+  width: 100%;
+  padding-right: 0.75rem;
+  padding-left: 0.75rem;
+}
+
+.body-member
+.timeline .line .identifier {
+  display: flex;
+  width: 100%;
+  align-items: center;
+}
+
+.body-member
+.timeline .line .identifier a {
+  --tw-text-opacity: 1;
+  color: rgb(243 244 246 / var(--tw-text-opacity));
+}
+
+.body-member
+.timeline .line .identifier a:hover .name {
+  text-decoration-line: underline;
+}
+
+.body-member
+.timeline .line .username {
+  font-size: 0.75rem;
+  line-height: 1rem;
+  margin-left: 0.5rem;
+  --tw-text-opacity: 1;
+  color: rgb(107 114 128 / var(--tw-text-opacity));
+  text-decoration-line: none;
+}
+
+.body-member
+.timeline .line .name {
+  font-weight: 700;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+}
+
+.body-member
+.timeline .line .name:hover {
+  text-decoration-line: underline;
+}
+
+.body-member
+.icon.icon--ei-location {
+  height: 1.75rem;
+  width: 1.75rem;
 }
 
 @media (min-width: 640px) {
