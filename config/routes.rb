@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
   devise_for :users
-  get 'home/index'
+  get '/', to: 'home#index'
 
   authenticate :user do
     resources :timelines,
